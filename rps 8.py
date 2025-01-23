@@ -8,7 +8,13 @@ def user_choice():
     print('Invalid choice do again')
 
 def computer_choice():
-    return random.choice(options)
+    choice_number = random.randint(1, 3)
+    if choice_number == 1:
+        return 'Rock'
+    elif choice_number == 2:
+        return 'Paper'
+    elif choice_number == 3:
+        return 'Scissor'
 
 def main_game():
     user_score = 0
