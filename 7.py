@@ -1,4 +1,4 @@
-max_value = []
+max_value = 0
 
 def ap():
     global max_value
