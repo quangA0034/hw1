@@ -1,23 +1,19 @@
 numbers = []
 
 def negative_int():
-    global numbers
     negatives_list = list(filter(lambda num: num < 0, numbers))
     print(f"The negative numbers are {negatives_list}")
 
 def even_int():
-    global numbers
     even_numbers = list(filter(lambda num: num % 2 == 0, numbers))
     print(f"Total even numbers are {len(even_numbers)}")
 
 def sum_positive():
-    global numbers
     positive_number = list(filter(lambda num: num > 0 and num % 3 == 0, numbers))
     total_sum = sum(positive_number)
     print(f"The sum of numbers are divisible by 3 is {total_sum}")
 
 def main():
-    global numbers
     while True:
         user_input = int(input("Enter a number (0 to quit): "))
         if user_input == 0:
